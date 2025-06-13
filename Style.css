@@ -1,0 +1,251 @@
+/* style.css */
+body {
+
+  padding-top: 100px; /* sesuaikan dengan tinggi navbar */
+
+
+  background-image: url('sampul briket.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* agar ikut scroll */
+  background-repeat: no-repeat;
+
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* hitam transparan */
+  position: fixed;
+  width: 95.5%;
+  top: 0;
+  z-index: 999;
+  backdrop-filter: blur(10px); /* efek blur latar belakang (modern) */
+  color: white;
+}
+
+.navbar h1 {
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: rgb(241, 241, 0); /*teks sub menu sebelah kanan atas */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #f0c040;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.0rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero button {
+  background: #ff6600;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.section {
+  
+  text-align: center;
+  background: rgba(255, 255, 255, 0.203); /* transparan */
+  margin: 2rem 0;
+  border-radius: 12px;
+  color: white; /* agar tetap terbaca */
+}
+
+.produk-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.produk-card {
+  background: #000000;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: none;
+  max-width: 250px;
+}
+
+.produk-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.kontak form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.kontak input, .kontak textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.kontak button {
+  background: #1a1a1a2b;
+  color: #fff;
+  border: none;
+  padding: 0.8rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+footer {
+  background: #1a1a1a;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+#produk.section {
+  background: none; /* latar putih tanpa transparansi */
+  backdrop-filter: none; /* hapus efek blur */
+  color: rgb(252, 252, 252); /* supaya teksnya tetap terbaca */
+}
+.produk-detail {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  color: white;
+  text-align: left;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#show-all-button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background: #ff6600;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Optional: jika ingin footer tetap di bawah dengan spasi saat konten pendek */
+footer {
+  background: #1a1a1a;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto; /* inilah kunci agar tetap di bawah */
+}
+#artikel.section,
+#tentang.section,
+#kontak.section {
+  background: none;
+  color: none;
+}
+.baca-selengkapnya {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background: #ff6600;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.baca-selengkapnya:hover {
+  background: #e05500;
+}
+.section-solid {
+  text-align: left;
+  background: none;
+  color: white;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 12px;
+}
+
+.back-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background: #ff6600;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.wa-button {
+  display: inline-block;
+  background-color: #25D366;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.wa-button:hover {
+  background-color: #1ebe5d;
+  color: white;
+}
