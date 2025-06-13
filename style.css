@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding-top: 100px;
   font-family: Arial, sans-serif;
-  background-image: url('sampul briket.jpg');
+  background-image: url("sampul briket.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -120,7 +120,11 @@ footer {
   background: #1a1a1a;
   color: white;
   text-align: center;
-  padding: 1rem;
+  padding: 0.2rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 /* RESPONSIVE */
