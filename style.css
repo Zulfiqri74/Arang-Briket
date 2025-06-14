@@ -94,6 +94,17 @@ body {
   border-radius: 10px;
   width: 250px;
   color: white;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.produk-card:hover {
+  transform: scale(1.05);
+}
+
+.produk-card h3,
+.produk-card p {
+  color: white;
 }
 
 .produk-card img {
@@ -125,6 +136,57 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
+}
+
+.halaman-produk {
+  background-color: black;
+  color: white;
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 12px;
+  max-width: 800px;
+  text-align: justify;
+}
+
+.halaman-produk img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.back-button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.6rem 1.2rem;
+  background: #ff6600;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.tabel-harga {
+  width: 100%;
+  max-width: 600px;
+  margin: 2rem auto;
+  border-collapse: collapse;
+  background: white;
+  color: black;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.tabel-harga th,
+.tabel-harga td {
+  padding: 1rem;
+  color: black;
+  font-weight: bold;
+}
+
+.tabel-harga tr:hover {
+  background-color: #f2f2f2;
 }
 
 /* RESPONSIVE */
